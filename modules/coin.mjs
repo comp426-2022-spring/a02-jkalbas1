@@ -18,9 +18,9 @@ function coinFlip() {
   flip_value = Math.random(2)
   if(flip_value == 0) 
   {
-    return 0
+    return 'heads'
   } else {
-    return 1
+    return 'tails'
   }
 }
 
@@ -44,7 +44,17 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-
+  flip_arr = [flips]
+  for(let i=0; i < flips; i++) {
+    flip_value = Math.random(2)
+    if(flip_value == 0) 
+    {
+      flips[i] = 'heads'
+    } else {
+      flips[i] = 'tails'
+    }
+  }
+  return flip_arr
 }
 
 /** Count multiple flips
@@ -61,7 +71,16 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-
+  tails = 0
+  heads = 0
+  for(let i=0; i<array.length; i ++) {
+    if (array[i] == 'heads') {
+      heads += 1
+    } else {
+      tails += 1
+    }
+  }
+  return {'tails': tails, 'heads': heads}
 }
 
 /** Flip a coin!
