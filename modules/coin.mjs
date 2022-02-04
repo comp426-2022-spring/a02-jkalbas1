@@ -45,14 +45,15 @@ export function coinFlip() {
  */
 
 export function coinFlips(flips) {
-  flip_arr = [flips]
+  const flip_arr = []
+  let flip_value = 2;
   for(let i=0; i < flips; i++) {
     flip_value = Math.floor(Math.random(2) * 2)
     if(flip_value == 0) 
     {
-      flips[i] = 'heads'
+      flip_arr[i] = 'heads'
     } else {
-      flips[i] = 'tails'
+      flip_arr[i] = 'tails'
     }
   }
   return flip_arr
@@ -72,8 +73,8 @@ export function coinFlips(flips) {
  */
 
 export function countFlips(array) {
-  tails = 0
-  heads = 0
+  let tails = 0
+  let heads = 0
   for(let i=0; i<array.length; i ++) {
     if (array[i] == 'heads') {
       heads += 1

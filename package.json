@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/comp426-2022-spring/a02-jkalbas1/issues"
   },
-  "homepage": "https://github.com/comp426-2022-spring/a02-jkalbas1#readme"
+  "homepage": "https://github.com/comp426-2022-spring/a02-jkalbas1#readme", 
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
 }
