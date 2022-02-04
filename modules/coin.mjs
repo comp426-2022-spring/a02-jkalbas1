@@ -95,7 +95,21 @@ function countFlips(array) {
  */
 
 function flipACoin(call) {
-
+  flip_value = Math.random(2)
+  flip = ''
+  if(flip_value == 0) 
+  {
+    flip = 'heads'
+  } else {
+    flip = 'tails'
+  }
+  result = ''
+  if(result == call) {
+    result = 'win'
+  } else {
+    result = 'lose'
+  }
+  return {'call': call, 'flip': flip, 'result': result}
 }
 
 
@@ -103,3 +117,7 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
+export function coinFlip(){}
+export function coinFlips(){}
+export function countFlips(){}
+export function flipACoin(){}
