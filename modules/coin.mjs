@@ -15,7 +15,13 @@
  */
 
 function coinFlip() {
-
+  flip_value = Math.random(2)
+  if(flip_value == 0) 
+  {
+    return 0
+  } else {
+    return 1
+  }
 }
 
 /** Multiple coin flips
