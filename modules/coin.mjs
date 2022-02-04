@@ -97,16 +97,16 @@ export function countFlips(array) {
  */
 
 export function flipACoin(call) {
-  flip_value = Math.floor(Math.random(2) * 2)
-  flip = ''
+  let flip_value = Math.floor(Math.random(2) * 2)
+  let flip = ''
   if(flip_value == 0) 
   {
     flip = 'heads'
   } else {
     flip = 'tails'
   }
-  result = ''
-  if(result == call) {
+  let result = ''
+  if(flip == call) {
     result = 'win'
   } else {
     result = 'lose'
