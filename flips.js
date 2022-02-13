@@ -1,12 +1,7 @@
-var args = process.argv.slice(2);
+var args = require('minimist')(process.argv.slice(2));
 
-const number;
+const number = args['number'] || 1
 
-if( args[0] != null) {
-    number = args[0].replace('--number=', '')
-} else {
-    number = 1
-}
 import { coinFlips, countFlips } from './modules/coin.mjs'
 
 let flips = coinFlips(number)
