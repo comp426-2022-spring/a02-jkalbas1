@@ -1,9 +1,11 @@
 var args = process.argv.slice(2);
 
+const number;
+
 if( args[0] != null) {
-    const number = args[0].replace('--number=', '')
+    number = args[0].replace('--number=', '')
 } else {
-    const number = 1
+    number = 1
 }
 import { coinFlips, countFlips } from './modules/coin.mjs'
 
