@@ -82,6 +82,11 @@ export function countFlips(array) {
       tails += 1
     }
   }
+  if ( tails == 0) {
+    return {'heads': heads}
+  } else if (heads == 0) {
+    return {'tails': tails}
+  }
   return {'tails': tails, 'heads': heads}
 }
 
