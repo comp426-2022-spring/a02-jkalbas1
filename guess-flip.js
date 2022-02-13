@@ -1,7 +1,7 @@
 var args = process.argv.slice(2);
 
 if(args[0] == null) {
-    console.log('Error: no input. \nUsage: "node guess-flip --call=[heads|tails]')
+    console.log('Error: no input.', '\n','Usage: node guess-flip --call=[heads|tails]')
     process.exit(1)
 }
 
