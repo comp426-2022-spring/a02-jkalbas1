@@ -1,7 +1,7 @@
 var args = process.argv.slice(2)
 
 var number = 0
-if (args[0] == null) {
+if (args[0] == null || args[0] == '--number=') {
     number = 1
 } else {
     number = args[0].replace('--number=', '')
